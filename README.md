@@ -2,7 +2,7 @@
 
 Placeholder in Python is like a temporary spot or marker in your code where you plan to put some specific information later. It's a way to say "I'll fill in this part with actual data when I need to."
 
-In other words, Placeholders in Python are part of a broader concept called string formatting. They allow for dynamic string creation and manipulation.
+In other words, Placeholders are part of a broader concept called string formatting. They allow for dynamic string creation and manipulation.
 
 ## 
 What does a placeholder look like?
