@@ -41,6 +41,8 @@ greet("Alice", "morning")  # Outputs: Good morning, Alice!
 
 - Parameters are variables listed in the definition of a function or method.
 
+- They will receive arguments when a new object is created.
+
 - They act as placeholders for the values that will be passed into the function when it's called.
 
 - Parameters have a scope limited to the function they're defined in.
@@ -54,6 +56,37 @@ greet("Alice", "morning")  # Outputs: Good morning, Alice!
 - They store data that is associated with that object.
 
 - Attributes have a lifespan as long as the object exists and can be accessed from various methods within the class.
+
+## Key differences between parameteres and attributes
+
+### 1. Lifespan:
+
+- Parameters exist only during the execution of the method.
+- Attributes persist as long as the object exists.
+
+
+### 2. Scope:
+
+- Parameters are local to the method they're defined in.
+- Attributes can be accessed by any method in the class (and sometimes from outside the class).
+
+
+### 3. Purpose:
+
+- Parameters are used to pass data into methods.
+- Attributes are used to store data that belongs to an object.
+
+
+### 4. Assignment:
+
+- Parameters get their values when a method is called.
+- Attributes are typically assigned values within methods (often in ```__init__```), but can be modified later.
+
+
+### 5. Syntax:
+
+- Parameters are listed in method definitions: ```def method(parameter1, parameter2)```:
+- Attributes are usually prefixed with ```self.``` inside class methods: ```self.attribute = value```
 
 
 ```bash
@@ -75,6 +108,12 @@ class Car:
             print(f"Drove {distance} miles. Total mileage is now {self.mileage}.")
         else:
             print("You need to start the engine first!")
+
+The ```__init__``` method:
+
+- This is a special method in Python classes, called a constructor.
+- It initializes a new object of the class.
+- The ```self``` parameter refers to the instance being created.
 
 # Creating an instance (object) of the Car class
 my_car = Car("Toyota", "Corolla", 2020)
