@@ -125,33 +125,33 @@ my_car.drive(50)
 
 Let's break this down:
 
-1. Object:
+### 1. Object:
 
 An object is an instance of a class. In this example, ```my_car``` is an object of the ```Car``` class.
 Objects have their own set of attributes and can perform actions defined by their methods.
 
 
-2. Parameters:
+### 2. Parameters:
 
 Parameters are variables in a method definition that act as placeholders for values passed when the method is called.
 In ```__init__(self, make, model, year)```, ```make```, ```model```, and ```year``` are parameters.
 In ```drive(self, distance)```, distance is a parameter.
 
 
-3. Attributes:
+### 3. Attributes:
 
 Attributes are variables that belong to an object and store its state.
 In this example, ```self.make```, ```self.model```, ```self.year```, ```self.mileage```, and ```self.running``` are all attributes.
 Note that ```mileage``` and ```running``` are attributes that weren't created from parameters.
 
 
-4. Instance:
+### 4. Instance:
 
 An instance is a specific realization of a class. It's synonymous with "object" in this context.
 ```my_car``` is an instance of the ```Car``` class.
 
 
-5. Arguments:
+### 5. Arguments:
 
 - Arguments are the actual values passed to a method when it's called.
 - In ```Car("Toyota", "Corolla", 2020)```, "Toyota", "Corolla", and 2020 are arguments.
