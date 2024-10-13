@@ -84,4 +84,69 @@ my_car.start_engine()
 my_car.drive(50)
 ```
 
+Let's break this down:
+
+1. Object:
+
+An object is an instance of a class. In this example, ```my_car``` is an object of the ```Car``` class.
+Objects have their own set of attributes and can perform actions defined by their methods.
+
+
+2. Parameters:
+
+Parameters are variables in a method definition that act as placeholders for values passed when the method is called.
+In ```__init__(self, make, model, year)```, ```make```, ```model```, and ```year``` are parameters.
+In ```drive(self, distance)```, distance is a parameter.
+
+
+3. Attributes:
+
+Attributes are variables that belong to an object and store its state.
+In this example, ```self.make```, ```self.model```, ```self.year```, ```self.mileage```, and ```self.running``` are all attributes.
+Note that ```mileage``` and ```running``` are attributes that weren't created from parameters.
+
+
+4. Instance:
+
+An instance is a specific realization of a class. It's synonymous with "object" in this context.
+```my_car``` is an instance of the ```Car``` class.
+
+
+5. Arguments:
+
+- Arguments are the actual values passed to a method when it's called.
+- In ```Car("Toyota", "Corolla", 2020)```, "Toyota", "Corolla", and 2020 are arguments.
+- In ```my_car.drive(50)```, 50 is an argument.
+
+
+
+Now, to address your question about why we don't define all attributes as parameters:
+
+1. Default or Calculated Values:
+
+Some attributes might have default values or be calculated based on other attributes. For example, ```mileage``` starts at 0 for all new cars.
+
+
+2. Internal State:
+
+Attributes like ```running``` represent the internal state of the object that doesn't need to be set during initialization.
+
+
+3. Flexibility:
+
+Not all attributes need to be set when an object is created. Some might be set or changed later.
+
+
+4. Simplicity:
+
+Having too many parameters can make object creation cumbersome. It's often better to have a few essential parameters and set other attributes as needed.
+
+
+5. Encapsulation:
+
+Some attributes might be intended for internal use only, and not exposing them as parameters helps maintain encapsulation.
+
+
+
+In our ```Car``` class, ```make```, ```model```, and year are essential for creating a car, so they're parameters. But ```mileage``` (which starts at 0) and running (which starts as False) don't need to be set during initialization, so they're not parameters.
 
