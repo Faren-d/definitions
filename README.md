@@ -18,7 +18,7 @@ message = f"My name is {name} and I am {age} years old."
 print(message)
 ```
 
-# Objcts
+# Objects
 
 An object is like a container that holds data and functions related to that data. Almost everything in Python is an object.
 Example:
@@ -28,7 +28,7 @@ my_car = "Toyota"  # my_car is a string object
 my_numbers = [1, 2, 3]  # my_numbers is a list object
 ```
 
-# Arguments:
+# Arguments
 Arguments are pieces of information that you pass into a function when you call it. They're like inputs for the function to work with.
 Example:
 ```bash
@@ -56,5 +56,32 @@ greet("Alice", "morning")  # Outputs: Good morning, Alice!
 - Attributes have a lifespan as long as the object exists and can be accessed from various methods within the class.
 
 
+```bash
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make    # attribute
+        self.model = model  # attribute
+        self.year = year    # attribute
+        self.mileage = 0    # attribute (not from a parameter)
+        self.running = False  # attribute (not from a parameter)
+
+    def start_engine(self):
+        self.running = True
+        print(f"The {self.year} {self.make} {self.model}'s engine is now running.")
+
+    def drive(self, distance):
+        if self.running:
+            self.mileage += distance
+            print(f"Drove {distance} miles. Total mileage is now {self.mileage}.")
+        else:
+            print("You need to start the engine first!")
+
+# Creating an instance (object) of the Car class
+my_car = Car("Toyota", "Corolla", 2020)
+
+# Using the object
+my_car.start_engine()
+my_car.drive(50)
+```
 
 
