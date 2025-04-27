@@ -1,4 +1,29 @@
 
+# How to go to home folder in "windows terminal":
+
+|   What you want to do  |      Command     |
+|:----------------------:|:----------------:|
+| Go home                | cd ~             |
+| List files/folders     | ls               |
+| Enter your repo folder | cd <folder-name> |
+| Open in VSCode         | code .           |
+
+## Example:
+```bash
+cd ~
+ls
+cd Python-Programming
+code .
+```
+##
+
+|      You want to see...     |              Run this command             |
+|:---------------------------:|:-----------------------------------------:|
+| Conda environments (Python) | `conda env list`  or  `conda info --envs` |
+| Files/Folders in Home       | `ls` or `ls -la`                          |
+
+
+
 # How to find where your spesific folder for example: "Python-Programming" folder is?
 
 
@@ -14,27 +39,28 @@ This command means:
 
 ```-name "Python-Programming"``` → name matching Python-Programming
 
-# Summary
+## Summary
 
-Action            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  Command
 
-Search for folder  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;    `find ~ -type d -name "Python-Programming"`
+| Action                 | Command                                     |
+|------------------------|---------------------------------------------|
+| Search for folder      | `find ~ -type d -name "Python-Programming"` |
+| Go into folder         | `cd /path/to/Python-Programming`            |
+| Open in VSCode         | `code`                                      |
+| means "current folder" | `.`                                         |
 
-Go into folder   &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;     `cd /path/to/Python-Programming`
-  
-Open in VSCode     &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;    `code .`
+
 
 # How to "highlight", "bold", "italic", "underline" in Markdown?
 
-Action &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  How <br>
-Open .ipynb &nbsp; &nbsp; &nbsp;&nbsp;   `Click in Explorer sidebar`<br>
-Edit text &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `Double-click a Markdown cell` <br>
-Make bold &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `**text** `<br>
-Make italic &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `*text* `<br>
-Underline &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `__text__` <br>
-Highlight &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `<mark>text</mark>` <br>
-Save &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; `Ctrl + S` <br>
-Preview &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `Shift + Enter` <br>
+| Action         | How                          |
+|----------------|------------------------------|
+| Open .ipynb    | Click in Explorer sidebar    |
+| Edit text      | Double-click a Markdown cell |
+| Make bold      | `**text**`                   |
+| Highlight text | `<mark>text</mark>`          |
+| Save           | `Ctrl + S`                   |
+
 
 # Placeholder
 
