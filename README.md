@@ -1,3 +1,41 @@
+
+# How to find where your spesific folder for example: "Python-Programming" folder is?
+
+
+`find ~ -type d -name "Python-Programming"`
+
+This command means:
+
+```find``` → search
+
+```~``` → starting from your home directory
+
+```-type d``` → look for directories (folders)
+
+```-name "Python-Programming"``` → name matching Python-Programming
+
+# Summary
+
+Action            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  Command
+
+Search for folder  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;    `find ~ -type d -name "Python-Programming"`
+
+Go into folder   &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;     `cd /path/to/Python-Programming`
+  
+Open in VSCode     &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;    `code .`
+
+# How to "highlight", "bold", "italic", "underline" in Markdown?
+
+Action &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  How <br>
+Open .ipynb &nbsp; &nbsp; &nbsp;&nbsp;   `Click in Explorer sidebar`<br>
+Edit text &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `Double-click a Markdown cell` <br>
+Make bold &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `**text** `<br>
+Make italic &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `*text* `<br>
+Underline &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `__text__` <br>
+Highlight &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `<mark>text</mark>` <br>
+Save &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; `Ctrl + S` <br>
+Preview &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `Shift + Enter` <br>
+
 # Placeholder
 
 Placeholder in Python is like a temporary spot or marker in your code where you plan to put some specific information later. It's a way to say "I'll fill in this part with actual data when I need to."
