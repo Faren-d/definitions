@@ -24,6 +24,23 @@
 
 "I want notebooks but better" → Jupyter in VS Code
 
+# WSL
+
+| Concept              | What It Means                         | Why It Matters for Python               |
+|----------------------|---------------------------------------|-----------------------------------------|
+| Windows OS (🖥️)       | Microsoft's operating system          | Default environment for many users      |
+| Unix/Linux Tools (🐧) | Powerful dev tools (e.g., bash, grep) | Python/Coding workflows rely on them    |
+| WSL (🔀)              | Windows Subsystem for Linux           | Lets you run Linux tools inside Windows |
+
+## How to Open Windows Terminal from PowerShell
+
+### Quick Method:
+1. Press **`Windows + X`**
+2. Select **PowerShell** (or PowerShell Admin)
+3. Type:
+   ```powershell
+   wt
+
 # How to go to home folder in "windows terminal":
 
 |   What you want to do  |      Command     |
