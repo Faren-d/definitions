@@ -1,4 +1,29 @@
 
+# Visual Workflow Guide
+1. Start Here → [Terminal 🖥️] → Install Python & Git  
+2. Code Here → [VS Code 🟣] → Write & Debug  
+3. Experiment → [Jupyter 📓] → Test Ideas  
+4. Manage → [Conda 🐍📦] → Keep Projects Safe  
+5. Power Combo → [Jupyter + VS Code 🔥] → Best of Both Worlds
+
+# Python Development Tools – Quick Guide
+| Tool               | Logo                                                                                                                                                                                                      | Purpose             | Why Use It?                         | Best For                      |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------------------|-------------------------------|
+| Windows Terminal   | 🖥️                                                                                                                                                                                                         | Modern command-line | Tabs, fast, supports Python/Git     | Running scripts, Git commands |
+| VS Code            | <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="30">                                                                                               | Code editor         | Autocomplete, debugging, extensions | Writing & managing projects   |
+| Jupyter Notebook   | <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" width="30">                                                                                                               | Interactive coding  | Step-by-step execution, visuals     | Data science, learning        |
+| Conda              | <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg" width="30">                                                                                                                 | Environment manager | Avoid library conflicts             | Stable projects               |
+| Jupyter in VS Code | <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="20"> + <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" width="20"> | Notebooks in IDE    | Debug notebooks + use Git           | Clean data science            |
+
+# When to Use Which?
+"I'm just starting" → Jupyter Notebook
+
+"I'm building something big" → VS Code + Terminal
+
+"I need to organize my libraries" → Conda
+
+"I want notebooks but better" → Jupyter in VS Code
+
 # How to go to home folder in "windows terminal":
 
 |   What you want to do  |      Command     |
