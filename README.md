@@ -106,6 +106,36 @@ Absolute: Always works from any location (begins with /)
 
 Relative: Depends on your current directory (uses . or ..)
 
+# Directory vs. Folder: The Same Thing, Different Terms
+
+| System               | Term Used   | Command                  | What It Creates                      | Visual Representation |
+|----------------------|-------------|--------------------------|--------------------------------------|-----------------------|
+| Windows (GUI)        | "Folder"    | Right-click → New Folder | A container for files/subfolders     | 📁 New Folder          |
+| Linux/WSL (Terminal) | "Directory" | mkdir new_dir            | A container for files/subdirectories | 📂 new_dir/            |
+
+💡 Remember 💡 When you run mkdir new_folder:
+
+- You're creating a new directory (what Windows calls a "folder")
+
+- The command works exactly the same way whether you think of it as a "folder" or "directory"
+
+- The system creates an empty container called "new_folder" in your current location
+
+- GUI (File Explorer) → Calls it a "folder"
+
+- Terminal (WSL/CMD) → Calls it a "directory"
+
+- Functionally identical – just different naming conventions! 
+
+
+```bash
+$ mkdir new_folder  # Creates a directory (you'll see it as a folder in Windows Explorer)
+$ ls
+new_folder/  # Now exists (can put files inside)
+```
+
+
+
 # How to go to home folder in "windows terminal":
 
 |   What you want to do  |      Command     |
