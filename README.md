@@ -160,6 +160,21 @@ new_folder/  # Now exists (can put files inside)
 
 4. All commands operate in current directory unless specified otherwise
 
+# Additional Useful Commands
+| Command | Description                 | Example Usage                       | Notes                                                                     |
+|---------|-----------------------------|-------------------------------------|---------------------------------------------------------------------------|
+| history | Shows command history       | history                             | Displays numbered list of recent commands Use !123 to re-run command #123 |
+| clear   | Clears terminal screen      | clear                               | Just scrolls output up (history remains accessible)                       |
+| wget    | Downloads files from web    | wget http://example.com/file.txt    | Downloads "file.txt" from the web                                         |
+| curl    | Advanced data transfer tool | curl -O http://example.com/file.txt | Downloads "file.txt" from the web using cURL                              |
+
+💡|``` ↑```/```↓``` | Browse command history | Press ```↑``` to recall last command | Scroll through past commands |
+
+| Option | Type          | Meaning                     | Example                                    | Output              |
+|--------|---------------|-----------------------------|--------------------------------------------|---------------------|
+| -o     | Lowercase 'o' | Save with custom filename   | curl -o myfile.txt http://example.com/data | Saves as myfile.txt |
+| -O     | Uppercase 'O' | Save with original filename | curl -O http://example.com/data.txt        | Saves as data.txt   |
+
 # How to go to home folder in "windows terminal":
 
 |   What you want to do  |      Command     |
