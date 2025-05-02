@@ -43,6 +43,69 @@
    ```powershell
    wt
 
+
+# How to "highlight", "bold", "italic", "underline" in Markdown?
+
+| Action         | How                          |
+|----------------|------------------------------|
+| Open .ipynb    | Click in Explorer sidebar    |
+| Edit text      | Double-click a Markdown cell |
+| Make bold      | `**text**`                   |
+| Highlight text | `<mark>text</mark>`          |
+| Save           | `Ctrl + S`                   |
+
+
+# Comparing Prompt, Command, and Code:
+
+| Term    | Purpose                               | Example (Tech)                       | Example (Real-World Analogy)    | Where Used                | Key Differences                                            |
+|---------|---------------------------------------|--------------------------------------|---------------------------------|---------------------------|------------------------------------------------------------|
+| Prompt  | Guides AI/human with natural language | "ChatGPT, explain DNS like I’m 5"    | Asking a teacher a question     | ChatGPT, Copilot, DALL·E  | Flexible, human-language request (no strict rules).        |
+| Command | Direct action for a computer          | del file.txt (deletes a file)        | Pressing "Start" on a microwave | Cmd, Terminal, PowerShell | Rigid, immediate action (exact syntax required).           |
+| Code    | Program logic for automation/apps     | for i in range(3): print(i) (Python) | Writing a recipe for a chef     | Python, JavaScript, Java  | Reusable program logic (needs interpretation/compilation). |
+
+# File System Structure in Unix-Based Systems
+Unix-based systems (Linux, macOS) organize files in a hierarchical tree structure, starting from the root directory (/). All files and subdirectories branch from this single root, unlike Windows, which uses drive letters (e.g., C:\).
+
+## Key Features:
+- Root Directory (/) – The top-level directory containing all other files and folders.
+
+- Tree-Like Hierarchy – Subdirectories (e.g., /home, /etc) extend from the root.
+
+- No Drive Letters – Unlike Windows, Unix systems mount all storage under /.
+
+- Case-sensitive paths
+
+# Navigating the File System
+
+| Command                       | Description                               | Example      | Notes                            |
+|-------------------------------|-------------------------------------------|--------------|----------------------------------|
+| cd (change directory)         | Moves between directories                 | cd Documents | Moves to "Documents" directory   |
+| .                             | Refers to current directory               | ./script.sh  | Runs script in current directory |
+| ..                            | Refers to parent directory                | cd ..        | Moves back one level             |
+| ls (list)                     | Shows files/directories in current folder | ls           | Add -l for detailed list         |
+| pwd (print working directory) | Displays current directory path           | pwd          | Shows full absolute path         |
+
+## Key Notes:
+
+All paths are case-sensitive in Unix/Linux
+
+```~``` refers to your home directory (e.g., cd ~)
+
+Use tab for auto-completion of file/directory names
+
+# Path Type
+| Path Type     | Description                   | Example                | When to Use                          |
+|---------------|-------------------------------|------------------------|--------------------------------------|
+| Absolute Path | Starts from root (/)          | /home/user/Documents   | When you need a fixed, full location |
+| Relative Path | Starts from current directory | ../Downloads or ./file | When targeting nearby files          |
+
+
+## Key Differences:
+
+Absolute: Always works from any location (begins with /)
+
+Relative: Depends on your current directory (uses . or ..)
+
 # How to go to home folder in "windows terminal":
 
 |   What you want to do  |      Command     |
@@ -95,24 +158,6 @@ This command means:
 
 
 
-# How to "highlight", "bold", "italic", "underline" in Markdown?
-
-| Action         | How                          |
-|----------------|------------------------------|
-| Open .ipynb    | Click in Explorer sidebar    |
-| Edit text      | Double-click a Markdown cell |
-| Make bold      | `**text**`                   |
-| Highlight text | `<mark>text</mark>`          |
-| Save           | `Ctrl + S`                   |
-
-
-# Comparing Prompt, Command, and Code:
-
-| Term    | Purpose                               | Example (Tech)                       | Example (Real-World Analogy)    | Where Used                | Key Differences                                            |
-|---------|---------------------------------------|--------------------------------------|---------------------------------|---------------------------|------------------------------------------------------------|
-| Prompt  | Guides AI/human with natural language | "ChatGPT, explain DNS like I’m 5"    | Asking a teacher a question     | ChatGPT, Copilot, DALL·E  | Flexible, human-language request (no strict rules).        |
-| Command | Direct action for a computer          | del file.txt (deletes a file)        | Pressing "Start" on a microwave | Cmd, Terminal, PowerShell | Rigid, immediate action (exact syntax required).           |
-| Code    | Program logic for automation/apps     | for i in range(3): print(i) (Python) | Writing a recipe for a chef     | Python, JavaScript, Java  | Reusable program logic (needs interpretation/compilation). |
 
 
 # Placeholder
