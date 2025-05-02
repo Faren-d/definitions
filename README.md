@@ -108,11 +108,12 @@ This command means:
 
 # Comparing Prompt, Command, and Code:
 
-| Term    | Purpose                               | Example (Tech)                       | Example (Real-World Analogy)    | Where Used                |
-|---------|---------------------------------------|--------------------------------------|---------------------------------|---------------------------|
-| Prompt  | Guides AI/human with natural language | "ChatGPT, explain DNS like I’m 5"    | Asking a teacher a question     | ChatGPT, Copilot, DALL·E  |
-| Command | Direct action for a computer          | del file.txt (deletes a file)        | Pressing "Start" on a microwave | Cmd, Terminal, PowerShell |
-| Code    | Program logic for automation/apps     | for i in range(3): print(i) (Python) | Writing a recipe for a chef     | Python, JavaScript, Java  |
+| Term    | Purpose                               | Example (Tech)                       | Example (Real-World Analogy)    | Where Used                | Key Differences                                            |
+|---------|---------------------------------------|--------------------------------------|---------------------------------|---------------------------|------------------------------------------------------------|
+| Prompt  | Guides AI/human with natural language | "ChatGPT, explain DNS like I’m 5"    | Asking a teacher a question     | ChatGPT, Copilot, DALL·E  | Flexible, human-language request (no strict rules).        |
+| Command | Direct action for a computer          | del file.txt (deletes a file)        | Pressing "Start" on a microwave | Cmd, Terminal, PowerShell | Rigid, immediate action (exact syntax required).           |
+| Code    | Program logic for automation/apps     | for i in range(3): print(i) (Python) | Writing a recipe for a chef     | Python, JavaScript, Java  | Reusable program logic (needs interpretation/compilation). |
+
 
 # Placeholder
 
