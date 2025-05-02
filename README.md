@@ -135,6 +135,30 @@ new_folder/  # Now exists (can put files inside)
 ```
 
 
+# Working with Files and Directories
+
+| Command | Action                      | Example                     | Critical Notes                         |
+|---------|-----------------------------|-----------------------------|----------------------------------------|
+| mkdir   | Create directory            | mkdir project               | Creates new folder                     |
+| touch   | Create file                 | touch notes.txt             | Creates empty file                     |
+| rm      | Delete file                 | rm notes.txt                | Permanent deletion (no undo!)          |
+| rm -r   | Delete directory + contents | rm -r project               | 🔴 Dangerous! Deletes everything inside |
+| rmdir   | Delete empty directory      | rmdir project               | ❌ Fails if directory contains files    |
+| cp      | Copy file                   | cp notes.txt notes_copy.txt | Creates duplicate file                 |
+| mv      | Move/rename file            | mv notes.txt project/       | Moves or renames in one operation      |
+
+💡 Key Functional Notes:
+1.  ```rm -r``` is the nuclear option - always double-check what you're deleting
+
+2.  ```rmdir``` is the safer alternative for empty directories
+
+3.  ```mv``` serves dual purpose:
+
+   -  ```mv``` old.txt new.txt (rename)
+
+   -  ```mv``` file.txt dir/ (move)
+
+4. All commands operate in current directory unless specified otherwise
 
 # How to go to home folder in "windows terminal":
 
