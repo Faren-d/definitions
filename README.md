@@ -195,6 +195,36 @@ In WSL, access Windows drives at:
 /mnt/c/      # Windows C: drive  
 /mnt/d/      # Windows D: drive, etc.
 ```
+
+
+# **Summary of the relationship between VS Code, WSL, and Windows:**
+
+VS Code is installed on the Windows system, not inside WSL itself. However, VS Code can connect to and work inside the WSL environment. Essentially, Windows treats WSL like a lightweight Linux virtual machine or server. Through the **Remote - WSL** extension, VS Code connects to this Linux environment, allowing you to edit and run code directly within WSL as if you were working on a remote machine.
+
+Additionally, Windows mounts its local drives (like C:) into WSL, making Windows files accessible inside the WSL environment under the `/mnt` directory (e.g., `/mnt/c`). This setup allows smooth interaction between the Windows file system, WSL, and VS Code.
+
+----------
+
+### **Simplified relationship:**
+
+-   **VS Code** runs on Windows.
+    
+-   **WSL** runs a Linux environment inside Windows.
+    
+-   **VS Code + Remote-WSL** connects to WSL, letting you work inside Linux.
+    
+-   **Windows drives** are mounted inside WSL under `/mnt/*`, allowing file access between the systems.
+
+
+### **Simple Example**
+
+-   You write Python code in VS Code (Windows).
+    
+-   When you hit "Run":
+    
+    -   The  **Windows UI**  shows you the output.
+        
+    -   The  **WSL Python extension**  runs the code in Linux (`/usr/bin/python3`).
 # How to go to home folder in "windows terminal":
 
 |   What you want to do  |      Command     |
