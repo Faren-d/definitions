@@ -66,6 +66,10 @@
 # File System Structure in Unix-Based Systems
 Unix-based systems (Linux, macOS) organize files in a hierarchical tree structure, starting from the root directory (/). All files and subdirectories branch from this single root, unlike Windows, which uses drive letters (e.g., C:\).
 
+![image](https://github.com/user-attachments/assets/d20dbac7-f3ef-47f8-945d-b13349170696)
+
+
+
 ## Key Features:
 - Root Directory (/) – The top-level directory containing all other files and folders.
 
@@ -175,16 +179,33 @@ new_folder/  # Now exists (can put files inside)
 | -o     | Lowercase 'o' | Save with custom filename   | curl -o myfile.txt http://example.com/data | Saves as myfile.txt |
 | -O     | Uppercase 'O' | Save with original filename | curl -O http://example.com/data.txt        | Saves as data.txt   |
 
+
+## Mounting
+
+Mounting = Attaching a filesystem (USB, disk, network share) to a directory ("mount point") to access its files.
+
+### Key Paths
+
+```/mnt``` – Manually mounted filesystems (e.g., sudo mount /dev/sdb1 /mnt/mydrive).
+
+## Mounting Windows Drive (C:) in Linux/WSL
+
+In WSL, access Windows drives at:
+```bash
+/mnt/c/      # Windows C: drive  
+/mnt/d/      # Windows D: drive, etc.
+```
 # How to go to home folder in "windows terminal":
 
 |   What you want to do  |      Command     |
 |:----------------------:|:----------------:|
-| Go home                | cd ~             |
-| List files/folders     | ls               |
-| Enter your repo folder | cd <folder-name> |
-| Open in VSCode         | code .           |
+| Go home                | ```cd ~  ```           |
+| List files/folders     |``` ls   ```            |
+| Enter your repo folder |``` cd <folder-name> ```|
+| Open in VSCode         | ```code .```           |
 
-## Example:
+
+### Example:
 ```bash
 cd ~
 ls
