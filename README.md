@@ -225,6 +225,21 @@ Additionally, Windows mounts its local drives (like C:) into WSL, making Windows
     -   The  **Windows UI**  shows you the output.
         
     -   The  **WSL Python extension**  runs the code in Linux (`/usr/bin/python3`).
+ 
+  ### Command Palette in VScode: 
+  
+  Accessible through `Ctrl+Shift+P` (Windows/Linux), the Command Palette allows you to execute commands and access various features with ease.
+
+  ## Extensions
+  
+  One of the most compelling aspects of VS Code is its extensibility. Extensions are add-ons that enhance the editor's capabilities, tailored to different programming languages, frameworks, and development workflows.
+
+  ## Basic Editing
+ the basics of code editing in VS Code:
+ - Open a file by clicking File -> Open or using the keyboard shortcut Ctrl+O (Windows/Linux) or Cmd+O (Mac).
+ - Save your changes with Ctrl+S (Windows/Linux) or Cmd+S (Mac). You can use essential editing commands such as cut, copy, paste, and undo with familiar shortcuts.
+ - You can move any line by pressing Alt
+  
 # How to go to home folder in "windows terminal":
 
 |   What you want to do  |      Command     |
