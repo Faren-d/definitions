@@ -311,8 +311,27 @@ Overall, using Conda (especially through Miniconda) gives Python developers a po
 
 ![image](https://github.com/user-attachments/assets/a0dd8633-1454-4833-9f65-e671da8d3066)
 
+#  Environment Creation & Basics
+
+| **Command**                            | **Description**                                                          |
+|----------------------------------------|--------------------------------------------------------------------------|
+| `conda create --name my_env python=3.10` | Creates a new environment with a specific Python version.                |
+| `conda activate my_env`                 | Activates the specified Conda environment.                               |
+| `conda deactivate`                       | Deactivates the current environment and returns to the base environment. |
+| `conda env list or conda info --envs`    | Lists all available Conda environments.                                  |
+| `conda env remove --name my_env`        | Deletes the specified environment.                                       |
 
 
+# Installing and Managing Packages
+| **Command**                          | **Description**                                                                                                            |
+|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| `conda list`                         | Lists installed packages in the activated environment.                                                                     |
+| `conda install PACKAGE_NAME`         | Installs a package (must activate environment first). Example workflow: `conda activate my_env` `conda install numpy`      |
+| `conda install PACKAGE_NAME=VERSION` | Installs a specific version (e.g., numpy=1.25). Example:  `conda install numpy=1.25`                                       |
+| `pip install PACKAGE_NAME`           | Installs a package using pip (use within activated Conda env). Example: `conda activate my_env` `pip install PACKAGE_NAME` |
+| `conda update PACKAGE_NAME`          | Updates a specific package. Example: `conda activate my_env` `conda update numpy`                                          |
+| `conda update --all`                 | Updates all packages in the activated environment. Example: `conda activate my_env` `conda update --all`                   |
+| `conda remove PACKAGE_NAME`          | Uninstalls a package. Example: `conda activate my_env` `conda remove numpy`                                                |
 
 # Placeholder
 
