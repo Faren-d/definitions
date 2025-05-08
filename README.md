@@ -313,6 +313,9 @@ Overall, using Conda (especially through Miniconda) gives Python developers a po
 
 #  Environment Creation & Basics
 
+![image](https://github.com/user-attachments/assets/24760f49-ecee-461d-93b5-39a0bfb67c8d)
+
+
 | **Command**                            | **Description**                                                          |
 |----------------------------------------|--------------------------------------------------------------------------|
 | `conda create --name my_env python=3.10` | Creates a new environment with a specific Python version.                |
@@ -320,6 +323,10 @@ Overall, using Conda (especially through Miniconda) gives Python developers a po
 | `conda deactivate`                       | Deactivates the current environment and returns to the base environment. |
 | `conda env list or conda info --envs`    | Lists all available Conda environments.                                  |
 | `conda env remove --name my_env`        | Deletes the specified environment.                                       |
+
+## Activating and Deactivating Environments
+
+![image](https://github.com/user-attachments/assets/d88d94bb-4bb2-4832-bcdc-080af91457af)
 
 
 # Installing and Managing Packages
@@ -332,6 +339,16 @@ Overall, using Conda (especially through Miniconda) gives Python developers a po
 | `conda update PACKAGE_NAME`          | Updates a specific package. Example: `conda activate my_env` `conda update numpy`                                          |
 | `conda update --all`                 | Updates all packages in the activated environment. Example: `conda activate my_env` `conda update --all`                   |
 | `conda remove PACKAGE_NAME`          | Uninstalls a package. Example: `conda activate my_env` `conda remove numpy`                                                |
+
+# Environment Sharing (YAML Files)
+Conda allows you to export the environment configuration to a YAML file and recreate the same environment on another system.
+
+| **Command**                                                  | **Description**                                                                                                  |
+|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| `conda activate my_env` `conda env export > environment.yml` | Saves the environment configuration to a YAML file.                                                              |
+| `conda env create -f environment.yml`                        | Creates a new environment from a YAML file. Replace `environment.yml` with the filename of your environment file |
+
+
 
 # Placeholder
 
