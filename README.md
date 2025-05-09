@@ -360,6 +360,7 @@ Conda allows you to export the environment configuration to a YAML file and recr
 | **Command**                                                  | **Description**                                                                                                  |
 |--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | `conda activate my_env` `conda env export > environment.yml` | Saves the environment configuration to a YAML file.                                                              |
+|`cat environment.yml`                                          |It shows all that is included in that file|
 | `conda env create -f environment.yml`                        | Creates a new environment from a YAML file. Replace `environment.yml` with the filename of your environment file |
 
 
