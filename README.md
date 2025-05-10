@@ -363,7 +363,9 @@ Conda allows you to export the environment configuration to a YAML file and recr
 |`cat environment.yml`                                          |It shows all that is included in that file|
 | `conda env create -f environment.yml`                        | Creates a new environment from a YAML file. Replace `environment.yml` with the filename of your environment file |
 
+# Conda environments in Vscode
 
+- To run your code on windows terminal, run the command: ` python main.py`. Change `main.py` with the address of your file. Because I was in the same directory, I just wrote the name of the file.
 
 # Placeholder
 
