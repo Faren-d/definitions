@@ -367,6 +367,16 @@ Conda allows you to export the environment configuration to a YAML file and recr
 
 - To run your code on windows terminal, run the command: ` python main.py`. Change `main.py` with the address of your file. Because I was in the same directory, I just wrote the name of the file.
 
+# Setting up Jupyter Notebook with Conda in VS Code
+
+
+- First activate the environment and then run the following command to install Juoyterlab in that env: `conda install jupyterlab`
+
+- After installation, you can find Jupyterlab in your list; however, to search specifically, run the command:`conda list | grep jupyter`, so, it lists just those which have jupyter
+
+- To launch jupyterlab after installation, run the following command in the terminal: `jupyter lab`
+
+
 # Placeholder
 
 Placeholder in Python is like a temporary spot or marker in your code where you plan to put some specific information later. It's a way to say "I'll fill in this part with actual data when I need to."
