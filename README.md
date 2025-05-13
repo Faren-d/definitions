@@ -355,13 +355,20 @@ use this command:
 | `conda remove PACKAGE_NAME`          | Uninstalls a package. Example: `conda activate my_env` `conda remove numpy`                                                |
 
 
-# commands for creating envs and installing packages:
+### commands for creating envs and installing packages:
 
 | Command       | Typical Structure                 | Your Example                          |
 |---------------|-----------------------------------|---------------------------------------|
 | conda create  | create -n NAME [PACKAGES] [FLAGS] | create -n myenv python -c conda-forge |
 | conda install | install [FLAGS] [PACKAGES]        | install -c conda-forge jupyterlab     |
 
+Because:
+
+- install doesn't require a positional argument first
+
+- Flags like `-c` typically come before the package names
+
+- The channel applies to all packages listed after it
 
 # Environment Sharing (YAML Files)
 Conda allows you to export the environment configuration to a YAML file and recreate the same environment on another system.
@@ -384,6 +391,24 @@ Conda allows you to export the environment configuration to a YAML file and recr
 - After installation, you can find Jupyterlab in your list; however, to search specifically, run the command:`conda list | grep jupyter`, so, it lists just those which have jupyter
 
 - To launch jupyterlab after installation, run the following command in the terminal: `jupyter lab`
+
+### Relationship between Jupyter, ipykernel and python
+
+***Python***:
+
+- The actual programming language that executes your code. Like a car's engine (raw power).
+
+***ipykernel***:
+
+- A translator that lets Jupyter talk to Python. Like a car's dashboard controls (steering wheel, pedals) that send commands to the engine.
+
+***Jupyter (Lab/Notebook)***:
+
+- The user interface where you write and see code/output. Like the car's interior (seats, speedometer, touchscreen).
+
+### How they work together
+
+![image](https://github.com/user-attachments/assets/2ea18e38-7718-47c8-a142-b9d71712a2bc)
 
 
 # Placeholder
