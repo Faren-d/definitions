@@ -354,6 +354,15 @@ use this command:
 | `conda update --all`                 | Updates all packages in the activated environment. Example: `conda activate my_env` `conda update --all`                   |
 | `conda remove PACKAGE_NAME`          | Uninstalls a package. Example: `conda activate my_env` `conda remove numpy`                                                |
 
+
+# commands for creating envs and installing packages:
+
+| Command       | Typical Structure                 | Your Example                          |
+|---------------|-----------------------------------|---------------------------------------|
+| conda create  | create -n NAME [PACKAGES] [FLAGS] | create -n myenv python -c conda-forge |
+| conda install | install [FLAGS] [PACKAGES]        | install -c conda-forge jupyterlab     |
+
+
 # Environment Sharing (YAML Files)
 Conda allows you to export the environment configuration to a YAML file and recreate the same environment on another system.
 
